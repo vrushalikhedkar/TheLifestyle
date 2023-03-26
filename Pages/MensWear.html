@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <link rel="StyleSheet" href="Menswear.css">
+    <body class="body" id="DarkMode">
+        <div class="TitleDiv">
+            <h1 class="Title">
+                The LifeStyle Generator
+            </h1>
+        </div>
+        <button class="Lightbtn" onclick="Light()">
+            Light
+        </button>
+        <button class="Darkbtn" onclick="Dark()">
+            Dark
+        </button>
+        <div>
+            <font class="SubTitle">
+                Mens Wear...
+            </font>
+            <font class="Slogan1">
+                Hey Gentelman, <br><br>
+            </font>
+            <font class="Slogan2">
+                Are You Confused, What To Wear Today...<br><br>
+            </font>
+            <font class="Slogan3">
+                We Are Here to Help You...
+            </font>
+        </div>
+        
+        <div>
+            <div>
+                <button class="Generateimagebtn">
+                    Generate Image...
+                </button>
+            </div>
+            <div class="GeneratedImages">
+                <img src="" alt="Generated Random Image">
+            </div>
+            <div class="ImageURl">
+
+            </div>
+            <button class="CopyBtn">
+                Copy URL
+            </button>
+        </div>
+
+        <script>
+            function Light(){
+                const Element = document.getElementById("DarkMode");
+                Element.className = "body";
+            }
+
+            function Dark(){
+                const Element = document.getElementById("DarkMode");
+                Element.className = "body2";
+            }
+        </script>
+    </body>
+</html>

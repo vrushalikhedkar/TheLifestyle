@@ -132,5 +132,6 @@ body{
     color: white;
     margin-left: 15%;
     background-color: #146C94;
+    transition: 0.3s;
     transform: scale(1.05);
 }

@@ -1,0 +1,187 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #80d0c7;
+}
+
+.body2{
+    background-color: #245953;
+}
+
+.TitleDiv{
+    height: 70px;
+    width: 100%;
+    background-color: #1abc9c;
+}
+
+.Title{
+    color: rgb(32, 47, 47);
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+.SubTitle{
+    font-size: 25px;
+    color: rgb(32, 47, 47);
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-family: cursive;
+    font-weight: bolder;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.Lightbtn{
+    height: 35px;
+    width: 75px;
+    font-size: 17px;
+    border-radius: 15%;
+    padding: 2px;
+    margin-top: 10px;
+    font-family: cursive;
+    background-color: #4e4376;
+    color: aliceblue;
+    margin-left: 85%;
+}
+
+.Lightbtn:hover{
+    height: 35px;
+    width: 75px;
+    font-size: 17px;
+    border-radius: 15%;
+    padding: 2px;
+    margin-top: 10px;
+    font-family: cursive;
+    background-color: #2a5298;
+    transform: scale(1.1);
+    color: aliceblue;
+    margin-left: 85%;
+}
+
+.Darkbtn{
+    height: 35px;
+    width: 75px;
+    font-size: 17px;
+    border-radius: 15%;
+    padding: 2px;
+    margin-top: 10px;
+    font-family: cursive;
+    background-color: #4e4376;
+    color: aliceblue;
+    margin-left: 30px;
+}
+
+.Darkbtn:hover{
+    height: 35px;
+    width: 75px;
+    font-size: 17px;
+    border-radius: 15%;
+    padding: 2px;
+    margin-top: 10px;
+    font-family: cursive;
+    background-color: #2a5298;
+    transform: scale(1.1);
+    color: aliceblue;
+    margin-left: 30px;
+}
+
+
+.Slogan1{
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 30%;
+    color: #263159;
+}
+
+.Slogan2{
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 35%;
+    color: #263159;
+}
+
+.Slogan3{
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 55%;
+    color: #263159;
+}
+
+.Platform{
+    height: 600px;
+    width: 100%;
+    background-color: #80d0c7;
+    margin-top: 100px;
+}
+
+.Generateimagebtn{
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 25px;
+    background-color: #245953;
+    color: azure;
+    margin-left: 650px;
+    margin-bottom: 50px;
+}
+
+.Generateimagebtn:hover{
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 25px;
+    background-color: #263159;
+    color: azure;
+    margin-left: 650px;
+    margin-bottom: 50px;
+}
+
+.GeneratedImages{
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.ImageURl{
+    height: 30px;
+    width: 800px;
+    background-color: aliceblue;
+    color: black;
+    margin: auto;
+}
+
+.CopyBtn{
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 25px;
+    background-color: #245953;
+    color: azure;
+    margin-left: 725px;
+}
+
+.CopyBtn:hover{
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 25px;
+    background-color: #263159;
+    color: azure;
+    margin-left: 725px;
+}
