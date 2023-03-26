@@ -6,16 +6,16 @@
         </title>
         <link rel="StyleSheet" href="Index.css" >
     </head>
-    <body>
+    <body class="body" id="DarkMode">
         <div class="TitleDiv">
             <h1 class="Title">
                 The LifeStyle Generator
             </h1>
         </div>
-        <button class="Lightbtn">
+        <button class="Lightbtn" onclick="Light()">
             Light
         </button>
-        <button class="Darkbtn">
+        <button class="Darkbtn" onclick="Dark()">
             Dark
         </button>
 
@@ -77,6 +77,18 @@
             </div>
         </span>
         
+
+        <script>
+            function Light(){
+                const Element = document.getElementById("DarkMode");
+                Element.className = "body";
+            }
+
+            function Dark(){
+                const Element = document.getElementById("DarkMode");
+                Element.className = "body2";
+            }
+        </script>
     </body>
 </html>
 
