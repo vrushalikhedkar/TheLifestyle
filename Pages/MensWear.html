@@ -18,7 +18,7 @@
         <button class="Darkbtn" onclick="Dark()">
             Dark
         </button>
-        <div>
+        <!-- <div>
             <font class="SubTitle">
                 Mens Wear...
             </font>
@@ -31,12 +31,12 @@
             <font class="Slogan3">
                 We Are Here to Help You...
             </font>
-        </div>
+        </div> -->
         
         <div>
            <div class="Copyfloater">
-            <span type="text" class="ImageURl" id="URL">Copy This URL</span>
-            <button class="CopyBtn" id="imageURL" onclick="copytoclip()">
+            <input type="text" class="ImageURl" id="URL">
+            <button class="CopyBtn" onclick="copyToclipboard()">
                 Copy URL
             </button>
            </div>
@@ -52,6 +52,12 @@
             </div>
         </div>
 
+        <div class="Homediv">
+            <a href="../index.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/8862/8862711.png" alt="Home" class="HomeBtn">
+            </a>
+        </div>
+
         <script>
             function Light(){
                 const Element = document.getElementById("DarkMode");
@@ -63,26 +69,37 @@
                 Element.className = "body2";
             }
 
-            function copytoclip(){
-                const CopyText = document.getElementById('.URL');
-                // CopyText.select()
-                alert("Copied To Clipboard");
-            }
-                // const copytoclip = ()  => {
-                //     const copycontent = document.querySelector(".ImageURL");
-                //     navigator.clipboard.writeText(copycontent.innerHTML);
-                // };
-                // const button = document.querySelector(".CopyBtn");
-                // button.addEventListener("click", () => {
-                //     copytoclip();
-                // });
+            // function copytoclip(){
+            //     const CopyText = document.getElementById('.URL');
+            //     // CopyText.select()
+            //     alert("Copied To Clipboard");
+            // }
+               
+            // function copyToclipboard(){
+            //     var CopyText = document.getElementById("URL");
+            //     CopyText.select();
+            //     CopyText.setSelectionRange(0,99999);
+            //     document.execCommand("copy")
+            //     alert("Copied to Clipboard: " + CopyText.value);
+            // }
+                        
+            // document.addEventListener('DOMContentLoaded',function(){
+            // let copyButton = document.getElementsByTagName('button');
+            //     copyButton.addEventListener('click', function () {
+            //         navigator.clipboard
+            //             .writeText(document.getElementById('URL').innerText)
+            //             .then(
+            //                 success => console.log("text copied"), err => console.log("error copying text")
+            //             );
+            //     });
+            // });
 
             function generate(){
                 
             const min = 1;
             const max = 12;
             const number = Math.floor(Math.random() * (max - min + 1)) + min;
-
+        
             const link = document.getElementById("URL")
             const Menswear = document.getElementById("GeneratedRandomImage")
             

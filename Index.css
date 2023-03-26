@@ -4,17 +4,17 @@
 }
 
 body{
-    background-color: #80d0c7;
+    background-color: #f1e2f1;
 }
 
 .body2{
-    background-color: #245953;
+    background-color: #091615;
 }
 
 .TitleDiv{
     height: 70px;
     width: 100%;
-    background-color: #1abc9c;
+    background-color: #e4b7de;
 }
 
 .Title{
@@ -34,7 +34,7 @@ body{
     padding: 2px;
     margin-top: 10px;
     font-family: cursive;
-    background-color: #4e4376;
+    background-color: #37306B;
     color: aliceblue;
     margin-left: 85%;
 }
@@ -47,7 +47,7 @@ body{
     padding: 2px;
     margin-top: 10px;
     font-family: cursive;
-    background-color: #2a5298;
+    background-color: #66347F;
     transform: scale(1.1);
     color: aliceblue;
     margin-left: 85%;
@@ -61,7 +61,7 @@ body{
     padding: 2px;
     margin-top: 10px;
     font-family: cursive;
-    background-color: #4e4376;
+    background-color: #66347F;
     color: aliceblue;
     margin-left: 30px;
 }

@@ -4,17 +4,17 @@
 }
 
 body{
-    background-color: #80d0c7;
+    background-color: #E5E0FF;
 }
 
 .body2{
-    background-color: #245953;
+    background-color: #091615;
 }
 
 .TitleDiv{
     height: 70px;
     width: 100%;
-    background-color: #1abc9c;
+    background-color: #e4b7de ;
 }
 
 .Title{
@@ -46,7 +46,7 @@ body{
     padding: 2px;
     margin-top: 10px;
     font-family: cursive;
-    background-color: #4e4376;
+    background-color: #37306B;
     color: aliceblue;
     margin-left: 85%;
 }
@@ -59,7 +59,7 @@ body{
     padding: 2px;
     margin-top: 10px;
     font-family: cursive;
-    background-color: #2a5298;
+    background-color: #66347F;
     transform: scale(1.1);
     color: aliceblue;
     margin-left: 85%;
@@ -73,7 +73,7 @@ body{
     padding: 2px;
     margin-top: 10px;
     font-family: cursive;
-    background-color: #4e4376;
+    background-color: #37306B;
     color: aliceblue;
     margin-left: 30px;
 }
@@ -86,7 +86,7 @@ body{
     padding: 2px;
     margin-top: 10px;
     font-family: cursive;
-    background-color: #2a5298;
+    background-color: #66347F;
     transform: scale(1.1);
     color: aliceblue;
     margin-left: 30px;
@@ -136,7 +136,7 @@ body{
     font-size: 20px;
     margin-top: 250px;
     border-radius: 15px;
-    background-color: #245953;
+    background-color: #37306B;
     color: azure;
     margin-bottom: 50px;
     float: left;
@@ -149,7 +149,7 @@ body{
     width: 200px;
     font-size: 20px;
     margin-top: 250px;
-    background-color: #263159;
+    background-color: #66347F;
     color: azure;
     margin-bottom: 50px;
     float: left;
@@ -198,7 +198,7 @@ body{
     height: 40px;
     width: 120px;
     font-size: 20px;
-    background-color: #245953;
+    background-color: #37306B;
     color: azure;
     float: right;
     border-radius: 15px;
@@ -210,7 +210,7 @@ body{
     height: 40px;
     width: 120px;
     font-size: 20px;
-    background-color: #263159;
+    background-color: #66347F;
     color: azure;
     float: right;
     border-radius: 15px;
@@ -218,3 +218,17 @@ body{
     box-shadow: 2px 2px 2px 2px #263159;
 }
 
+.Homediv{
+    height: 100px;
+    width: 100%;
+}
+
+.HomeBtn{
+    display: block;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(1.1);
+}
