@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Kids Wear</title>
     <style>
-        body{
+        body {
             background-color: #FFB9B9;
         }
-        .optimization{
-            margin-left: 550px;
+
+        .novbar {
+            background-color: #FFE7CC;
+            text-align: center;
+            font-size: 20px;
+            height: 50px;
+            margin-top: -10px;
+            margin-bottom: 10px;
+            padding-top: 2px;
+            padding-bottom: 20px;
+        }
+
+        .select-bar {
+            display: block;
+            margin: auto;
+            margin-left: 580px;
+            width: 300px;
+            padding: 10px 10px;
             margin-top: 20px;
             border-radius: 15px;
+            border: none;
+        }
+
+        .optimization {
+            margin-left: 540px;
+            margin-top: 60px;
             height: 410px;
             width: 360px;
             cursor: pointer;
-            box-shadow: 0 0 10px 1px black;
+            border: 20px solid black;
         }
-        .genrate-img{
+
+        .genrate-img {
             display: block;
             border-radius: 30px;
             background-color: black;
@@ -27,98 +51,107 @@
             cursor: pointer;
             box-shadow: 0 0 5px 5px black;
         }
-          .heading{
+
+        .heading {
             text-align: center;
             font-size: 30px;
             margin-left: -70px;
-          }
+        }
     </style>
 
 </head>
+
 <body onload="generate()">
-    
+
     <div class="container">
-        <h2 class="heading">A Perfect Style For your Kid</h2>
-        <img src="../Images/KIds-wear-images/img-1.jpg" class="optimization" id="optimization"/>
+        <div class="novbar">
+            <h2 class="heading">The Kid's Wear</h2>
+        </div>
+
+        <select class="select-bar">
+            <option>Baby Boy</option>
+            <option>Baby Girl</option>
+            <option>Born Baby</option>
+
+        </select>
+
+        <img src="../Images/KIds-wear-images/img-1.jpg" class="optimization" id="optimization" />
         <button class="genrate-img" onclick="generate()">Generate Image</button>
     </div>
 
     <input type="text" value="https://i.pinimg.com/236x/17/45/c1/1745c1a0550c768fdd98fce0a8aa9ddd.jpg" id="myInput">
-    
+    <button onclick="copyUrl()">Copy Text</button>
+
 
     <script type="text/javascript">
-        function generate()
-        {
+        function generate() {
             const min = 1;
             const max = 12;
             const number = Math.floor(Math.random() * (max - min + 1)) + min;
 
 
             const kidswearImg = document.getElementById("optimization");
-           
-            if(number==1)
-            {
-                kidswearImg.src ="../Images/KIds-wear-images/img-1.jpg";
+
+            if (number == 1) {
+                kidswearImg.src = "../Images/KIds-wear-images/img-1.jpg";
 
             }
-             else if(number==2)
-            {
-                kidswearImg.src ="../Images/KIds-wear-images/img-2.jpg";
+            else if (number == 2) {
+                kidswearImg.src = "../Images/KIds-wear-images/img-2.jpg";
 
             }
-            else if(number==3)
-            {
-                kidswearImg.src= "../Images/KIds-wear-images/img-3.jpg";
+            else if (number == 3) {
+                kidswearImg.src = "../Images/KIds-wear-images/img-3.jpg";
 
             }
-            else  if(number==4)
-            {
+            else if (number == 4) {
                 kidswearImg.src = "../Images/KIds-wear-images/img-4.jpg";
 
             }
-            else if(number==5)
-            {
+            else if (number == 5) {
                 kidswearImg.src = "../Images/KIds-wear-images/img-5.jpg";
 
             }
-            else if(number==6)
-            {
+            else if (number == 6) {
                 kidswearImg.src = "../Images/KIds-wear-images/img-6.jpg";
 
             }
-            else if(number==7)
-            {
+            else if (number == 7) {
                 kidswearImg.src = "../Images/KIds-wear-images/img-7.jpg";
 
             }
-            else if(number==8)
-            {
+            else if (number == 8) {
                 kidswearImg.src = "../Images/KIds-wear-images/img-8.jpg";
 
             }
-            else if(number==9)
-            {
+            else if (number == 9) {
                 kidswearImg.src = "../Images/KIds-wear-images/img-9.jpg";
 
             }
-            else if(number==10)
-            {
+            else if (number == 10) {
                 kidswearImg.src = "../Images/KIds-wear-images/img-10.jpg";
 
             }
-            else if(number==11)
-            {
+            else if (number == 11) {
                 kidswearImg.src = "../Images/KIds-wear-images/img-11.jpg";
 
             }
-            else
-            {
+            else {
                 kidswearImg.src = "../Images/KIds-wear-images/img-12.jpg";
 
+            }
+
+
+            function copyUrl() {
+                const copyText = document.getElementById("myInput");
+
+                copyText.select();
+                alert("copy the text: " + copyText.value);
             }
 
 
         }
     </script>
 </body>
+
 </html>
