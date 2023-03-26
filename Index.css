@@ -1,0 +1,127 @@
+
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #80d0c7;
+}
+
+.TitleDiv{
+    height: 70px;
+    width: 100%;
+    background-color: #1abc9c;
+}
+
+.Title{
+    color: rgb(32, 47, 47);
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+.Lightbtn{
+    height: 35px;
+    width: 75px;
+    font-size: 17px;
+    border-radius: 15%;
+    padding: 2px;
+    margin-top: 10px;
+    font-family: cursive;
+    background-color: #4e4376;
+    color: aliceblue;
+    margin-left: 85%;
+}
+
+.Lightbtn:hover{
+    height: 35px;
+    width: 75px;
+    font-size: 17px;
+    border-radius: 15%;
+    padding: 2px;
+    margin-top: 10px;
+    font-family: cursive;
+    background-color: #2a5298;
+    transform: scale(1.1);
+    color: aliceblue;
+    margin-left: 85%;
+}
+
+.Darkbtn{
+    height: 35px;
+    width: 75px;
+    font-size: 17px;
+    border-radius: 15%;
+    padding: 2px;
+    margin-top: 10px;
+    font-family: cursive;
+    background-color: #4e4376;
+    color: aliceblue;
+    margin-left: 30px;
+}
+
+.Darkbtn:hover{
+    height: 35px;
+    width: 75px;
+    font-size: 17px;
+    border-radius: 15%;
+    padding: 2px;
+    margin-top: 10px;
+    font-family: cursive;
+    background-color: #2a5298;
+    transform: scale(1.1);
+    color: aliceblue;
+    margin-left: 30px;
+}
+
+.Row1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.Row2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 75px;
+    margin-bottom: 100px;
+}
+
+.CardTopDiv{
+    height: 480px;
+    width: 300px;
+    border: 2px black solid;
+    background-color: #2C3333;
+    
+}
+
+.CardDiv{
+    width: 280px;
+    padding: 10px;
+}
+
+.Cardbtn{
+    width: 70%;
+    height: 30px;
+    font-size: 20px;
+    font-family: cursive;
+    color: white;
+    margin-left: 15%;
+    background-color: #2E4F4F;
+}
+
+.Cardbtn:hover{
+    width: 70%;
+    height: 30px;
+    font-size: 20px;
+    font-family: cursive;
+    color: white;
+    margin-left: 15%;
+    background-color: #146C94;
+    transform: scale(1.05);
+}
