@@ -1,98 +1,75 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            The Lifestyle Generator
-        </title>
-        <link rel="StyleSheet" href="Index.css" >
-    </head>
-    <body class="body" id="DarkMode">
-        <div class="TitleDiv">
-            <h1 class="Title">
-                The LifeStyle Generator
-            </h1>
+
+<head>
+    <title>The Lifestyle Generator</title>
+    <link rel="StyleSheet" href="Index.css" />
+</head>
+
+<body class="body" id="DarkMode">
+    <div class="TitleDiv">
+        <h1 class="Title">The LifeStyle Generator</h1>
+    </div>
+    <button class="Lightbtn" onclick="Light()">Light</button>
+    <button class="Darkbtn" onclick="Dark()">Dark</button>
+
+    <span class="Row1">
+        <div class="CardTopDiv">
+            <img src="./Images/main/traditional.jpg" alt="Traditional Image" class="CardDiv" />
+            <a href="./Pages/TraditionalWear.html">
+                <button class="Cardbtn">Traditional Wear</button>
+            </a>
         </div>
-        <button class="Lightbtn" onclick="Light()">
-            Light
-        </button>
-        <button class="Darkbtn" onclick="Dark()">
-            Dark
-        </button>
 
-        <span class="Row1">
-            <div class="CardTopDiv">
-                <img src="./Images/main/traditional.jpg" alt="Traditional Image" class="CardDiv">
-                <a href="./Pages/TraditionalWear.html" >
-                    <button class="Cardbtn">
-                        Traditional Wear
-                    </button>
-                </a>
-            </div>
+        <div class="CardTopDiv">
+            <img src="./Images/main/Formal Wear.jpeg" alt="Formal Wear Image" class="CardDiv" />
+            <a href="./Pages/FormalWear.html">
+                <button class="Cardbtn">Formal Wear</button>
+            </a>
+        </div>
 
-            <div class="CardTopDiv">
-                <img src="./Images/main/Formal Wear.jpeg" alt="Formal Wear Image" class="CardDiv">
-                <a href="./Pages/FormalWear.html" >
-                    <button class="Cardbtn">
-                        Formal Wear
-                    </button>
-                </a>
-            </div>
-            
-            <div class="CardTopDiv">
-                <img src="./Images/main/party-wear.jpg" alt="Party Wear Image" class="CardDiv">
-                <a href="./Pages/PartyWear.html" >
-                    <button class="Cardbtn">
-                        Party Wear
-                    </button>
-                </a>
-            </div>
-        </span>
+        <div class="CardTopDiv">
+            <img src="./Images/main/party-wear.jpg" alt="Party Wear Image" class="CardDiv" />
+            <a href="./Pages/PartyWear.html">
+                <button class="Cardbtn">Party Wear</button>
+            </a>
+        </div>
+    </span>
 
-        <span class="Row2">
-            <div class="CardTopDiv">
-                <img src="./Images/main/Mens Wear.jpg" alt="Mens Wear Image" class="CardDiv">
-                <a href="./Pages/MensWear.html" >
-                    <button class="Cardbtn">
-                        Mens Wear
-                    </button>
-                </a>
-            </div>
+    <span class="Row2">
+        <div class="CardTopDiv">
+            <img src="./Images/main/Mens Wear.jpg" alt="Mens Wear Image" class="CardDiv" />
+            <a href="./Pages/MensWear.html">
+                <button class="Cardbtn">Mens Wear</button>
+            </a>
+        </div>
 
-            <div class="CardTopDiv">
-                <img src="./Images/main/WomensWear.webp" alt="Formal Wear Image" class="CardDiv">
-                <a href="./Pages/WomensWear.html" >
-                    <button class="Cardbtn">
-                        Ladies Wear
-                    </button>
-                </a>
-            </div>
-            
-            <div class="CardTopDiv">
-                <img src="./Images/main/kidswear.jpg" alt="Party Wear Image" class="CardDiv">
-                <a href="./Pages/KidsWear.html" >
-                    <button class="Cardbtn">
-                        Kids Wear
-                    </button>
-                </a>
-            </div>
-        </span>
-        
+        <div class="CardTopDiv">
+            <img src="./Images/main/WomensWear.webp" alt="Formal Wear Image" class="CardDiv" />
+            <a href="./Pages/WomensWear.html">
+                <button class="Cardbtn">Ladies Wear</button>
+            </a>
+        </div>
 
-        <script>
-            function Light(){
-                const Element = document.getElementById("DarkMode");
-                Element.className = "body";
-            }
+        <div class="CardTopDiv">
+            <img src="./Images/main/kidswear.jpg" alt="Party Wear Image" class="CardDiv" />
+            <a href="./Pages/KidsWear.html">
+                <button class="Cardbtn">Kids Wear</button>
+            </a>
+        </div>
+    </span>
 
-            function Dark(){
-                const Element = document.getElementById("DarkMode");
-                Element.className = "body2";
-            }
-        </script>
-    </body>
+    <script>
+        function Light() {
+            const Element = document.getElementById("DarkMode");
+            Element.className = "body";
+        }
+
+        function Dark() {
+            const Element = document.getElementById("DarkMode");
+            Element.className = "body2";
+        }
+    </script>
+</body>
+
 </html>
-
-
-
-
-
