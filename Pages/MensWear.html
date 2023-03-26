@@ -9,7 +9,7 @@
     <body class="body" id="DarkMode">
         <div class="TitleDiv">
             <h1 class="Title">
-                The LifeStyle Generator
+                The Men's Wear
             </h1>
         </div>
         <button class="Lightbtn" onclick="Light()">
@@ -34,6 +34,12 @@
         </div>
         
         <div>
+           <div class="Copyfloater">
+            <span type="text" class="ImageURl" id="URL">Copy This URL</span>
+            <button class="CopyBtn" id="imageURL" onclick="copytoclip()">
+                Copy URL
+            </button>
+           </div>
             <div class="Floater">
                 <div>
                     <button class="Generateimagebtn" onclick="generate()">
@@ -41,15 +47,9 @@
                     </button>
                 </div>
                 <div class="GeneratedImages">
-                    <img src="../Images/main/Mens Wear.jpg" alt="Generated Random Image" class="GeneratedRandomImage" id="GeneratedRandomImage">
+                    <img src="../Images/MensWear/DefaultVK.jpeg" alt="Generated Random Image" class="GeneratedRandomImage" id="GeneratedRandomImage">
                 </div>
             </div>
-            <div class="ImageURl">
-
-            </div>
-            <button class="CopyBtn">
-                Copy URL
-            </button>
         </div>
 
         <script>
@@ -62,58 +62,89 @@
                 const Element = document.getElementById("DarkMode");
                 Element.className = "body2";
             }
+
+            function copytoclip(){
+                const CopyText = document.getElementById('.URL');
+                // CopyText.select()
+                alert("Copied To Clipboard");
+            }
+                // const copytoclip = ()  => {
+                //     const copycontent = document.querySelector(".ImageURL");
+                //     navigator.clipboard.writeText(copycontent.innerHTML);
+                // };
+                // const button = document.querySelector(".CopyBtn");
+                // button.addEventListener("click", () => {
+                //     copytoclip();
+                // });
+
             function generate(){
                 
             const min = 1;
             const max = 12;
             const number = Math.floor(Math.random() * (max - min + 1)) + min;
+
+            const link = document.getElementById("URL")
+            const Menswear = document.getElementById("GeneratedRandomImage")
+            
             if(number==1)
             {
-                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/1.webp"
+                link.innerHTML= "https://cdn07.nnnow.com/web-images/preview/styles/EWIT994F9OT/1675924881623/1.jpg"
+                Menswear.src = "../Images/MensWear/1.webp";
             }
             else if(number==2)
             {
-                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/2.jpg"
+                link.innerHTML= "https://cdn17.nnnow.com/web-images/preview/styles/FHWTJLNDJD1/1675849897586/1.jpg"
+                Menswear.src = "../Images/MensWear/2.jpg";
             }
             else if(number==3)
             {
-                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/3.jpg"
+                link.innerHTML = "https://cdn02.nnnow.com/web-images/preview/styles/6BF7MWLS2AJ/1675242787584/2.jpg"
+                Menswear.src = "../Images/MensWear/3.jpg";
             }
             else if(number==4)
             {
-                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/4.jpg"
+                link.innerHTML = "https://cdn06.nnnow.com/web-images/large/styles/BFDFR215EG6/1677755024192/3.jpg"
+                Menswear.src = "../Images/MensWear/4.jpg";
             }
             else if(number==5)
             {
-                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/5.jpg"
+                link.innerHTML = "https://cdn15.nnnow.com/web-images/large/styles/9CRUBT19QXB/1649917987144/2.jpg"
+                Menswear.src = "../Images/MensWear/5.jpg";
             }
             else if(number==6)
             {
-                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/6.jpg"
+                link.innerHTML = "https://cdn03.nnnow.com/web-images/large/styles/3K48YQMB3QR/1676360881947/3.jpg"
+                Menswear.src = "../Images/MensWear/6.jpg";
             }
             else if(number==7)
             {
-                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/7.jpg"
+                link.innerHTML = "https://cdn18.nnnow.com/web-images/large/styles/HEDCMFHHUGB/1678176618770/3.jpg"
+                Menswear.src = "../Images/MensWear/7.jpg";
             }
             else if(number==8)
             {
-                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/8.jpg"
+                link.innerHTML = "https://cdn08.nnnow.com/web-images/large/styles/6NYPB0DH3OE/1676444698175/3.jpg"
+                Menswear.src = "../Images/MensWear/8.jpg";
             }
             else if(number==9)
             {
-                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/9.jpg"
+                link.innerHTML = "https://cdn17.nnnow.com/web-images/large/styles/QHIDCR3MDYR/1677650459795/3.jpg"
+                Menswear.src = "../Images/MensWear/9.jpg";
             }
             else if(number==10)
             {
-                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/10.jpg"
+                link.innerHTML = "https://cdn15.nnnow.com/web-images/large/styles/7DPKKYB974O/1675954158774/2.jpg"
+                Menswear.src = "../Images/MensWear/10.jpg";
             }
             else if(number==11)
             {
-                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/11.jpg"
+                link.innerHTML = "https://cdn09.nnnow.com/web-images/large/styles/204HCIQ7FS8/1677647506377/3.jpg"
+                Menswear.src = "../Images/MensWear/11.jpg";
             }
             else
             {
-                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/12.jpg"
+                link.innerHTML = "https://cdn01.nnnow.com/web-images/large/styles/EOHAW397KHA/1677561893049/3.JPG"
+                Menswear.src = "../Images/MensWear/12.jpg";
             }
             }
         </script>

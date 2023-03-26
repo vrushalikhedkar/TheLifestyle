@@ -127,7 +127,7 @@ body{
 .Floater{
     display: flex;
     margin-top: 50px;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .Generateimagebtn{
@@ -135,10 +135,13 @@ body{
     width: 200px;
     font-size: 20px;
     margin-top: 250px;
+    border-radius: 15px;
     background-color: #245953;
     color: azure;
     margin-bottom: 50px;
     float: left;
+    font-family: cursive;
+    box-shadow: 2px 2px 2px 2px #263159;
 }
 
 .Generateimagebtn:hover{
@@ -150,6 +153,9 @@ body{
     color: azure;
     margin-bottom: 50px;
     float: left;
+    border-radius: 15px;
+    font-family: cursive;
+    box-shadow: 2px 2px 2px 2px #263159;
 }
 
 .GeneratedImages{
@@ -158,12 +164,15 @@ body{
     padding: 10px;
     margin-bottom: 20px;
     float: right;
+    
 }
 
 .GeneratedRandomImage{
     height: 550px;
     width: 400px;
     margin-right: 150px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 4px 4px #4e4376;
 }
 
 .ImageURl{
@@ -171,29 +180,41 @@ body{
     width: 80%;
     background-color: aliceblue;
     color: black;
-    margin: auto;
+    float: left;
+    padding: 5px;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px #245953;
+}
+
+.Copyfloater{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
 }
 
 .CopyBtn{
-    height: 50px;
+    height: 40px;
     width: 120px;
     font-size: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25px;
     background-color: #245953;
     color: azure;
-    margin-left: 725px;
+    float: right;
+    border-radius: 15px;
+    font-family: cursive;
+    box-shadow: 2px 2px 2px 2px #263159;
 }
 
 .CopyBtn:hover{
-    height: 50px;
+    height: 40px;
     width: 120px;
     font-size: 20px;
-    margin: auto;
-    margin-top: 25px;
     background-color: #263159;
     color: azure;
-    margin-left: 725px;
+    float: right;
+    border-radius: 15px;
+    font-family: cursive;
+    box-shadow: 2px 2px 2px 2px #263159;
 }
 
