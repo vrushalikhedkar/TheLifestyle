@@ -124,41 +124,51 @@ body{
     margin-top: 100px;
 }
 
+.Floater{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
 .Generateimagebtn{
     height: 50px;
     width: 200px;
     font-size: 20px;
-    margin: auto;
-    margin-top: 25px;
+    margin-top: 250px;
     background-color: #245953;
     color: azure;
-    margin-left: 650px;
     margin-bottom: 50px;
+    float: left;
 }
 
 .Generateimagebtn:hover{
     height: 50px;
     width: 200px;
     font-size: 20px;
-    margin: auto;
-    margin-top: 25px;
+    margin-top: 250px;
     background-color: #263159;
     color: azure;
-    margin-left: 650px;
     margin-bottom: 50px;
+    float: left;
 }
 
 .GeneratedImages{
-    height: 300px;
+    height: 600px;
     width: 300px;
     padding: 10px;
-    margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    float: right;
+}
+
+.GeneratedRandomImage{
+    height: 550px;
+    width: 400px;
+    margin-right: 150px;
 }
 
 .ImageURl{
     height: 30px;
-    width: 800px;
+    width: 80%;
     background-color: aliceblue;
     color: black;
     margin: auto;
@@ -168,7 +178,8 @@ body{
     height: 50px;
     width: 120px;
     font-size: 20px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 25px;
     background-color: #245953;
     color: azure;
@@ -185,3 +196,4 @@ body{
     color: azure;
     margin-left: 725px;
 }
+

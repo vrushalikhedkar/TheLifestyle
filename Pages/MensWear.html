@@ -34,13 +34,15 @@
         </div>
         
         <div>
-            <div>
-                <button class="Generateimagebtn">
-                    Generate Image...
-                </button>
-            </div>
-            <div class="GeneratedImages">
-                <img src="" alt="Generated Random Image">
+            <div class="Floater">
+                <div>
+                    <button class="Generateimagebtn" onclick="generate()">
+                        Generate Image...
+                    </button>
+                </div>
+                <div class="GeneratedImages">
+                    <img src="../Images/main/Mens Wear.jpg" alt="Generated Random Image" class="GeneratedRandomImage" id="GeneratedRandomImage">
+                </div>
             </div>
             <div class="ImageURl">
 
@@ -59,6 +61,60 @@
             function Dark(){
                 const Element = document.getElementById("DarkMode");
                 Element.className = "body2";
+            }
+            function generate(){
+                
+            const min = 1;
+            const max = 12;
+            const number = Math.floor(Math.random() * (max - min + 1)) + min;
+            if(number==1)
+            {
+                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/1.webp"
+            }
+            else if(number==2)
+            {
+                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/2.jpg"
+            }
+            else if(number==3)
+            {
+                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/3.jpg"
+            }
+            else if(number==4)
+            {
+                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/4.jpg"
+            }
+            else if(number==5)
+            {
+                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/5.jpg"
+            }
+            else if(number==6)
+            {
+                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/6.jpg"
+            }
+            else if(number==7)
+            {
+                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/7.jpg"
+            }
+            else if(number==8)
+            {
+                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/8.jpg"
+            }
+            else if(number==9)
+            {
+                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/9.jpg"
+            }
+            else if(number==10)
+            {
+                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/10.jpg"
+            }
+            else if(number==11)
+            {
+                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/11.jpg"
+            }
+            else
+            {
+                document.getElementById("GeneratedRandomImage").src = "../Images/MensWear/12.jpg"
+            }
             }
         </script>
     </body>
