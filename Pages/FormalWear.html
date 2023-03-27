@@ -30,14 +30,14 @@
         
         <div>
            <div class="Copyfloater">
-            <div type="text" class="ImageURl" id="URL">Copy Url</div>
-            <button class="CopyBtn" onclick="copyToclipboard()">
+            <input type="text" id="image-url">
+            <button class="CopyBtn" , onclick="copyToClipboard()">
                 Copy URL
             </button>
            </div>
             <div class="Floater">
                 <div>
-                    <button class="Generateimagebtn" onclick="generate()">
+                    <button class="Generateimagebtn" , onclick="generateImage()">
                         Generate Image...
                     </button>
                 </div>
@@ -68,72 +68,33 @@
             }
 
            
-            function generate(){
-                
-            const min = 1;
-            const max = 11;
-            const number = Math.floor(Math.random() * (max - min + 1)) + min;
-        
-            const link = document.getElementById("URL")
-            const formalwear = document.getElementById("formalRandomImage")
             
-            if(number==1)
-            {
-                link.innerHTML= "https://tse4.mm.bing.net/th?id=OIP.mZUtADkCcs3R2CeJ6L09FwHaJ4&pid=Api&P=0"
-                formalwear.src = "../Images/formal/1.jpg";
-            }
-            else if(number==2)
-            {
-                link.innerHTML= "https://tse4.mm.bing.net/th?id=OIP.kbFwSjhuHUOYybyRPCSTPAHaJ4&pid=Api&P=0"
-                formalwear.src = "../Images/formal/2.jpg";
-            }
-            else if(number==3)
-            {
-                link.innerHTML = "https://tse2.mm.bing.net/th?id=OIP.UGUJecnDGKg6PpLxaVFJXAHaJ4&pid=Api&P=0"
-                formalwear.src = "../Images/formal/3.jpg";
-            }
-            else if(number==4)
-            {
-                link.innerHTML = "https://dresseskhazana.com/wp-content/uploads/2017/06/indian-wedding-dress-for-bride-2017.jpg"
-                formalwear.src = "../Images/formal/4.jpg";
-            }
-            else if(number==5)
-            {
-                link.innerHTML = "https://www.arabiaweddings.com/sites/default/files/albums/2019/10/27/indian_wedding_dresses_4.jpg"
-                formalwear.src = "../Images/formal/5.jpg";
-            }
-            else if(number==6)
-            {
-                link.innerHTML = "https://www.stylesgap.com/wp-content/uploads/2015/06/Latest-Men-Party-Wear-Formal-Dresses-Collection-2015-2016-2.jpg"
-                formalwear.src = "../Images/formal/6.jpg";
-            }
-            else if(number==7)
-            {
-                link.innerHTML = "https://cdn18.nnnow.com/web-images/large/styles/HEDCMFHHUGB/1678176618770/3.jpg"
-                formalwear.src = "../Images/formal/7.jpg";
-            }
-            else if(number==8)
-            {
-                link.innerHTML = "https://mensopedia.com/wp-content/uploads/2019/07/men-black-tie-formal.jpg"
-                formalwear.src = "../Images/formal/8.jpg";
-            }
-            else if(number==9)
-            {
-                link.innerHTML = "https://4.bp.blogspot.com/-duAbCEIiYwE/VVRz_TC0LMI/AAAAAAAAAY0/uc68pow3CYQ/s1600/Men%2BFashion%2BFormal%2BWear%2BDresses%2BCollection%2B2015%2B(3).jpg"
-                formalwear.src = "../Images/formal/9.jpg";
-            }
-            else if(number==10)
-            {
-                link.innerHTML = ".https://tse3.mm.bing.net/th?id=OIP.HS0Hzgo6jMYRMc0H7RmNhAHaKz&pid=Api&P=0"
-                formalwear.src = "../Images/formal/10.jpg";
+            var images = [ "https://tse4.mm.bing.net/th?id=OIP.mZUtADkCcs3R2CeJ6L09FwHaJ4&pid=Api&P=0",
+            'https://tse4.mm.bing.net/th?id=OIP.kbFwSjhuHUOYybyRPCSTPAHaJ4&pid=Api&P=0',
+            'https://tse2.mm.bing.net/th?id=OIP.UGUJecnDGKg6PpLxaVFJXAHaJ4&pid=Api&P=0',
+            "https://dresseskhazana.com/wp-content/uploads/2017/06/indian-wedding-dress-for-bride-2017.jpg",
+            "https://www.arabiaweddings.com/sites/default/files/albums/2019/10/27/indian_wedding_dresses_4.jpg",
+            "https://www.stylesgap.com/wp-content/uploads/2015/06/Latest-Men-Party-Wear-Formal-Dresses-Collection-2015-2016-2.jpg",
+            "https://www.stylesgap.com/wp-content/uploads/2015/06/Latest-Men-Party-Wear-Formal-Dresses-Collection-2015-2016-2.jpg",
+            "https://mensopedia.com/wp-content/uploads/2019/07/men-black-tie-formal.jpg",
+            "https://4.bp.blogspot.com/-duAbCEIiYwE/VVRz_TC0LMI/AAAAAAAAAY0/uc68pow3CYQ/s1600/Men%2BFashion%2BFormal%2BWear%2BDresses%2BCollection%2B2015%2B(3).jpg",
+            "https://tse3.mm.bing.net/th?id=OIP.HS0Hzgo6jMYRMc0H7RmNhAHaKz&pid=Api&P=0"
+             ];
+            
+            function generateImage() {
+              var randomIndex = Math.floor(Math.random() * images.length);
+              var imageUrl = " " + images[randomIndex];
+              var imageElement = document.getElementById("formalRandomImage");
+              imageElement.src = imageUrl;
+              document.getElementById("image-url").value = imageUrl
             }
             
-            
-            else
-            {
-                link.innerHTML = "https://tse4.mm.bing.net/th?id=OIP.mZUtADkCcs3R2CeJ6L09FwHaJ4&pid=Api&P=0"
-                formalwear.src = "../Images/formal/1.jpg";
-            }
+            function copyToClipboard() {
+              var copyText = document.getElementById("image-url");
+              copyText.select();
+              copyText.setSelectionRange(0, 99999);
+              document.execCommand("copy");
+              alert("Copied to clipboard: " + copyText.value);
             }
             
         </script>
