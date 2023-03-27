@@ -29,18 +29,16 @@
             </select> -->
             <div class="btn-content">
                 <img src="https://images.meesho.com/images/products/33495619/m4ev1_400.webp" alt="image" class="image"
-                    id="image" />
-                <button class="random-btn" onclick="roll()">
+                    id="GeneratedRandomImage" />
+                <button class="random-btn"  onclick="generateImage()">
                     Generate Image
                 </button>
             </div>
         </div>
         <div class="Copyfloater">
             <!-- <div type="text" class="ImageURl" id="URL">Copy this URL</div> -->
-            <span type="text" class="ImageURl" id="URL">
-                Copy This URL
-            </span>
-            <button class="CopyBtn" onclick="copyToclipboard()">
+            <input type="text" id="image-url" placeholder="Copy this url">
+            <button class="CopyBtn" , onclick="copyToClipboard()">
                 Copy URL
             </button>
         </div>
@@ -62,66 +60,95 @@
             element.className = "container-body";
         }
 
-        function roll() {
-            const min = 1;
-            const max = 12;
-            const link = document.getElementById("URL");
-            const number = Math.floor(Math.random() * (max - min + 1) + min);
-            const rollImg = document.getElementById("image");
+        // function roll() {
+        //     const min = 1;
+        //     const max = 12;
+        //     const link = document.getElementById("URL");
+        //     const number = Math.floor(Math.random() * (max - min + 1) + min);
+        //     const rollImg = document.getElementById("image");
 
-            if (number == 1) {
-                link.innerHTML = "https://images.meesho.com/images/products/137607308/wvhfr_400.webp";
-                rollImg.src = "https://images.meesho.com/images/products/137607308/wvhfr_400.webp";
+        //     if (number == 1) {
+        //         link.innerHTML = "https://images.meesho.com/images/products/137607308/wvhfr_400.webp";
+        //         rollImg.src = "https://images.meesho.com/images/products/137607308/wvhfr_400.webp";
 
-            }
-            else if (number == 2) {
-                link.innerHTML ="https://images.meesho.com/images/products/112869796/qjykj_400.webp"
-                rollImg.src = "https://images.meesho.com/images/products/112869796/qjykj_400.webp";
-            }
-            else if (number == 3) {
-                link.innerHTML ="https://images.meesho.com/images/products/174295063/jff10_512.webp"
-                rollImg.src = "https://images.meesho.com/images/products/174295063/jff10_512.webp";
-            }
-            else if (number == 4) {
-                link.innerHTML ="https://images.meesho.com/images/products/162170012/trtzs_400.webp"
-                rollImg.src = "https://images.meesho.com/images/products/162170012/trtzs_400.webp";
-            }
-            else if (number == 5) {
-                link.innerHTML ="https://images.meesho.com/images/products/33495619/m4ev1_400.webp"
-                rollImg.src = "https://images.meesho.com/images/products/33495619/m4ev1_400.webp";
-            }
+        //     }
+        //     else if (number == 2) {
+        //         link.innerHTML ="https://images.meesho.com/images/products/112869796/qjykj_400.webp"
+        //         rollImg.src = "https://images.meesho.com/images/products/112869796/qjykj_400.webp";
+        //     }
+        //     else if (number == 3) {
+        //         link.innerHTML ="https://images.meesho.com/images/products/174295063/jff10_512.webp"
+        //         rollImg.src = "https://images.meesho.com/images/products/174295063/jff10_512.webp";
+        //     }
+        //     else if (number == 4) {
+        //         link.innerHTML ="https://images.meesho.com/images/products/162170012/trtzs_400.webp"
+        //         rollImg.src = "https://images.meesho.com/images/products/162170012/trtzs_400.webp";
+        //     }
+        //     else if (number == 5) {
+        //         link.innerHTML ="https://images.meesho.com/images/products/33495619/m4ev1_400.webp"
+        //         rollImg.src = "https://images.meesho.com/images/products/33495619/m4ev1_400.webp";
+        //     }
 
-            else if (number == 6) {
-                link.innerHTML ="https://images.meesho.com/images/products/175303214/av5gw_400.webp"
-                rollImg.src = "https://images.meesho.com/images/products/175303214/av5gw_400.webp";
-            }
-            else if (number == 7) {
-                link.innerHTML ="https://images.meesho.com/images/products/69514462/3rur6_400.webp"
-                rollImg.src = "https://images.meesho.com/images/products/69514462/3rur6_400.webp";
-            }
-            else if (number == 8) {
-                link.innerHTML ="https://images.meesho.com/images/products/184103735/azbng_400.webp"
-                rollImg.src = "https://images.meesho.com/images/products/184103735/azbng_400.webp";
-            }
-            else if (number == 9) {
-                link.innerHTML = "https://images.meesho.com/images/products/116840453/bdypx_400.webp"
-                rollImg.src = "https://images.meesho.com/images/products/116840453/bdypx_400.webp";
-            }
-            else if (number == 10) {
-                link.innerHTML = "https://images.meesho.com/images/products/74411268/meysu_400.webp"
-                rollImg.src = "https://images.meesho.com/images/products/74411268/meysu_400.webp";
-            }
-            else if (number == 11) {
-                link.innerHTML = "https://images.meesho.com/images/products/161852181/szisg_400.webp"
-                rollImg.src = "https://images.meesho.com/images/products/161852181/szisg_400.webp";
-            }
-            else if (number == 12) {
-                link.innerHTML ="https://images.meesho.com/images/products/71802374/yxrzn_400.webp"
-                rollImg.src = "https://images.meesho.com/images/products/71802374/yxrzn_400.webp";
-            }
-        }
+        //     else if (number == 6) {
+        //         link.innerHTML ="https://images.meesho.com/images/products/175303214/av5gw_400.webp"
+        //         rollImg.src = "https://images.meesho.com/images/products/175303214/av5gw_400.webp";
+        //     }
+        //     else if (number == 7) {
+        //         link.innerHTML ="https://images.meesho.com/images/products/69514462/3rur6_400.webp"
+        //         rollImg.src = "https://images.meesho.com/images/products/69514462/3rur6_400.webp";
+        //     }
+        //     else if (number == 8) {
+        //         link.innerHTML ="https://images.meesho.com/images/products/184103735/azbng_400.webp"
+        //         rollImg.src = "https://images.meesho.com/images/products/184103735/azbng_400.webp";
+        //     }
+        //     else if (number == 9) {
+        //         link.innerHTML = "https://images.meesho.com/images/products/116840453/bdypx_400.webp"
+        //         rollImg.src = "https://images.meesho.com/images/products/116840453/bdypx_400.webp";
+        //     }
+        //     else if (number == 10) {
+        //         link.innerHTML = "https://images.meesho.com/images/products/74411268/meysu_400.webp"
+        //         rollImg.src = "https://images.meesho.com/images/products/74411268/meysu_400.webp";
+        //     }
+        //     else if (number == 11) {
+        //         link.innerHTML = "https://images.meesho.com/images/products/161852181/szisg_400.webp"
+        //         rollImg.src = "https://images.meesho.com/images/products/161852181/szisg_400.webp";
+        //     }
+        //     else if (number == 12) {
+        //         link.innerHTML ="https://images.meesho.com/images/products/71802374/yxrzn_400.webp"
+        //         rollImg.src = "https://images.meesho.com/images/products/71802374/yxrzn_400.webp";
+        //     }
+        // }
 
+        var images = [  "https://images.meesho.com/images/products/137607308/wvhfr_400.webp",
+        "https://images.meesho.com/images/products/112869796/qjykj_400.webp",
+        "https://images.meesho.com/images/products/174295063/jff10_512.webp",
+        "https://images.meesho.com/images/products/162170012/trtzs_400.webp",
+        "https://images.meesho.com/images/products/33495619/m4ev1_400.webp",
+        "https://images.meesho.com/images/products/175303214/av5gw_400.webp",
+        "https://images.meesho.com/images/products/69514462/3rur6_400.webp",
+        "https://images.meesho.com/images/products/184103735/azbng_400.webp",
+        "https://images.meesho.com/images/products/116840453/bdypx_400.webp",
+        "https://images.meesho.com/images/products/74411268/meysu_400.webp",
+        "https://images.meesho.com/images/products/161852181/szisg_400.webp",
+        "https://images.meesho.com/images/products/71802374/yxrzn_400.webp"
 
+    ] ;            
+            
+            function generateImage() {
+              var randomIndex = Math.floor(Math.random() * images.length);
+              var imageUrl = " " + images[randomIndex];
+              var imageElement = document.getElementById("GeneratedRandomImage");
+              imageElement.src = imageUrl;
+              document.getElementById("image-url").value = imageUrl
+            }
+            
+            function copyToClipboard() {
+              var copyText = document.getElementById("image-url");
+              copyText.select();
+              copyText.setSelectionRange(0, 99999);
+              document.execCommand("copy");
+              alert("Copied to clipboard: " + copyText.value);
+            }
 
     </script>
 </body>
