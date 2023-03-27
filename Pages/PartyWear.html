@@ -1,30 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./PartyWear.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Menswear.css"> 
+    <link rel="stylesheet" href="WomenWear.css">
     <title> Party Wear</title>
+
 </head>
-<body>
-    <div class="text-container">
-        Party Wear Dresses
-    </div>
-<div class="container">
-    <div>
-        <select class="party-dresses">
-            <option>Party Wear Dresses</option>
-            <option>Women's Party Wear</option>
-            <option>Men's Party Wear</option>
-            <option></option>
-        </select>
+
+<style>
+    input[type]{
+        word-wrap: break-word;
+        height: 30px;
+    width: 65%;
+    background-color: aliceblue;
+    color: black;
+    float: left;
+    margin-left: 210px;
+    padding: 5px;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px #d8e3e2;
+    /* border: solid #091615 1px; */
+    border-radius: 6px;
+    font-family: 'Bree Serif', serif;
+    }
+
+    .CopyBtn {
+    height: 40px;
+    width: 100px;
+    margin-right: 40px;
+    border: #091615 solid 1px;
+    font-size: 20px;
+    background-color: #37306B;
+    color: azure;
+    float: right;
+    border-radius: 15%;
+    font-family: cursive;
+    box-shadow: 2px 2px 2px 2px #263159;
+    font-family: 'Bree Serif', serif;
+}
+</style>
+<body id="DarkMode">
+    <div class="TitleDivparty">
+        <h1 class="Titleparty">
+            Party Wear Dresses
+        </h1>
     </div>
 
-    <div>
-        <img src="/Images/main/Party Wear/dress1.webp" class="imgdress">
+
+    <button class="Lightbtn" onclick="Light()">
+        Light
+    </button>
+    <button class="Darkbtn" onclick="Dark()">
+        Dark
+    </button>
+    <div class="container">
+        <!-- <div>
+            <select class="party-dresses">
+                <option>Party Wear Dresses</option>
+                <option>Women's Party Wear</option>
+                <option>Men's Party Wear</option>
+                <option></option>
+            </select>
+        </div> -->
+
+        <div>
+            <img src="/Images/main/Party Wear/dress1.jpg" class="imgdress" id="GeneratedRandomImage">
+        </div>
+
+        <!-- <button class="randomize-party-btn", onlick="generateImage()">Generate Image....</button> -->
+        <button class="randomize-party-btn" , onclick="generateImage()"> Generate Image..</button>
+
     </div>
 
-</div>
+    <div class="Copyfloater">
+        <input type="text" id="image-url" placeholder="Copy this url">
+       
+
+        <button class="CopyBtn", onclick="copyToClipboard()" >
+           Copy URL
+        </button>
+    </div>
+    <div class="Homediv">
+        <a href="../index.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/8862/8862711.png" alt="Home" class="HomeBtn">
+        </a>
+    </div>
+
+
+
+
+    <script>
+
+
+        function Light() {
+            const Element = document.getElementById("DarkMode");
+            Element.className = "body";
+        }
+
+        function Dark() {
+            const Element = document.getElementById("DarkMode");
+            Element.className = "body2";
+        }
+        function Copyurl() {
+            alert("Copied to Clipboard")
+        }
+
+
+        var images = ["https://images.unsplash.com/photo-1559034750-cdab70a66b8e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
+        "https://images.unsplash.com/photo-1562645361-c88442d7bc58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80",
+        "https://images.unsplash.com/photo-1617258856138-402b60da4e2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        "https://images.unsplash.com/photo-1554787497-98caae0f95df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
+        "https://images.unsplash.com/photo-1527189919029-aeb3d997547d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=385&q=80",
+ ]    ;
+            
+            function generateImage() {
+              var randomIndex = Math.floor(Math.random() * images.length);
+              var imageUrl = " " + images[randomIndex];
+              var imageElement = document.getElementById("GeneratedRandomImage");
+              imageElement.src = imageUrl;
+              document.getElementById("image-url").value = imageUrl
+            }
+            
+            function copyToClipboard() {
+              var copyText = document.getElementById("image-url");
+              copyText.select();
+              copyText.setSelectionRange(0, 99999);
+              document.execCommand("copy");
+              alert("Copied to clipboard: " + copyText.value);
+            }
+    
+            // const dressImg = document.getElementById("partyimgdress");
+
+            // const dressImages = ["/Images/main/Party Wear/dress1.jpg", "/Images/main/Party Wear/dress2.jpg",
+            //     "/Images/main/Party Wear/dress3.jpg", "/Images/main/Party Wear/dress4.jpg", "/Images/main/Party Wear/dress5.jpg"]
+
+            // dressImg.src = dressImages[number];
+
+
+
+        
+    </script>
 </body>
+
 </html>
