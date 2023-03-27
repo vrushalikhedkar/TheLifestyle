@@ -1,14 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-
-
 body {
     background-color: #E5E0FF;
 }
-.body2{
+
+.body2 {
     background-color: #091615;
 
 }
@@ -25,7 +24,7 @@ body {
     padding-bottom: 2px;
 }
 
-.mode-btn{
+.mode-btn {
     margin-top: -40px;
 }
 
@@ -125,15 +124,51 @@ body {
 
 }
 
-
-
 .genrate-img:hover {
-    background-color: #6634f6;
     width: 20px 25px;
     font-size: 25px;
-    box-shadow: 0 0 5px 3px #9933ff
-    ;
+    background-color: #66347F;
+    color: azure;
+    border-radius: 15px;
+    font-family: cursive;
+    box-shadow: 2px 2px 2px 2px #263159;
 
+}
+.myInput{
+    height: 30px;
+    width: 80%;
+    margin-left: 80px;
+    margin-top: 30px;
+    background-color: aliceblue;
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px #245953;
+}
+.CopyBtn{
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    background-color: #37306B;
+    color: azure;
+    margin-left: 10px;
+    border-radius: 15px;
+    font-family: cursive;
+    box-shadow: 2px 2px 2px 2px #263159;
+    cursor: pointer;
+}
+
+.CopyBtn:hover{
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    background-color: #66347F;
+    color: azure;
+    border-radius: 15px;
+    font-family: cursive;
+    box-shadow: 2px 2px 2px 2px #263159;
 }
 
 .heading {
