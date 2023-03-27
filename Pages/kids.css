@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
 }
 
 body {
@@ -25,14 +25,22 @@ body {
     padding-top: 10px;
     padding-bottom: 2px;
 }
+.home-btn-container{
+    height: 100px;
+    width: 100%;
+
+
+}
 
 .HomeBtn {
+    height: 50px;
+    width: 50px;
     display: block;
-    height: 40px;
-    width: 40px;
-    margin-left: 40px;
-    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
+
 
 .Lightbtn {
     height: 35px;
@@ -146,7 +154,7 @@ body {
     font-size: 20px;
     background-color: #37306B;
     color: azure;
-    margin-left: 1320px;
+    margin-left: 1455px;
     margin-top: -40px;
     margin-bottom: 30px;
     border-radius: 15px;
@@ -161,14 +169,8 @@ body {
     font-size: 20px;
     background-color: #66347F;
     color: azure;
-    border-radius: 15px;
+    border-radius: 20px;
     font-family: cursive;
     box-shadow: 2px 2px 2px 2px #263159;
 }
 
-.heading {
-    text-align: center;
-    font-size: 30px;
-    margin-left: -70px;
-    font-family: cursive;
-}
