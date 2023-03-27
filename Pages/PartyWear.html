@@ -59,7 +59,27 @@
     <script>
 
 
-      
+        function Light() {
+            const Element = document.getElementById("DarkMode");
+            Element.className = "body";
+        }
+
+        function Dark() {
+            const Element = document.getElementById("DarkMode");
+            Element.className = "body2";
+        }
+        function Copyurl() {
+            alert("Copied to Clipboard")
+        }
+        
+
+        function generateimgs(){
+            const min = 1;
+            const max = 5;
+            const number = Math.floor(Math.random() * (max - min + 1)) + min;
+            
+                
+        }
     </script>
 </body>
 
