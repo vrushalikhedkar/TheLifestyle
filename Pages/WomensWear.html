@@ -59,7 +59,7 @@
             width: 75px;
             padding: 2px;
             font-family: cursive;
-            background-color: #4e4376;
+            background-color: #37306B;
             margin-top: 10px;
             color: aliceblue;
             margin-left: 85%;
@@ -73,7 +73,7 @@
             padding: 2px;
             font-size: 17px;
             margin-left: 85%;
-            background-color: #2a5298;
+            background-color: #66347F;
             margin-top: 10px;
             font-family: cursive;
             transform: scale(1.1);
@@ -89,7 +89,7 @@
             padding: 2px;
             margin-top: 10px;
             font-family: cursive;
-            background-color: #4e4376;
+            background-color: #37306B;
             font-size: 17px;
             margin-left: 30px;
         }
@@ -102,7 +102,7 @@
             font-family: cursive;
             padding: 2px;
             margin-top: 10px;
-            background-color: #2a5298;
+            background-color: #66347F;
             border-radius: 15%;
             margin-left: 30px;
             transform: scale(1.1);
@@ -122,7 +122,7 @@
 
 
         .random-btn {
-            background-color: #4e4376;
+            background-color: #37306B;
             border: 2px solid black;
             border-radius: 15%;
             color: #fff;
@@ -136,7 +136,7 @@
         }
 
         .random-btn:hover {
-            background-color: #2a5298;
+            background-color: #66347F;
             transform: scale(1.2);
             color: aliceblue;
         }
@@ -152,17 +152,17 @@
 <body>
     <div class="container" id="dark-mode">
         <div class="title-div">
-            <h1 class="title-heading">The Ladies Wear</h1>
+            <h1 class="title-heading">The Women's Wear</h1>
         </div>
         <button class="light-btn" onclick="Light()">Light</button>
         <button class="dark-btn" onclick="Dark()">Dark</button>
         <div class="select-category">
-            <select name="" id="category">
+            <!-- <select name="" id="category">
                 <option value="paithani" onclick="kurti()"> Saree</option>
                 <option value="silk">Kurti</option>
                 <option value="banarasi">Top</option>
 
-            </select>
+            </select> -->
             <div class="btn-content">
                 <img src="https://images.meesho.com/images/products/33495619/m4ev1_400.webp" alt="image" class="image"
                     id="image" />
@@ -186,30 +186,62 @@
 
         function roll() {
             const min = 1;
-            const max = 5;
+            const max = 12;
 
             const number = Math.floor(Math.random() * (max - min + 1) + min)
             const rollImg = document.getElementById("image");
 
             if (number == 1) {
+                link.innerHTML= "https://images.meesho.com/images/products/137607308/wvhfr_400.webp";
                 rollImg.src = "https://images.meesho.com/images/products/137607308/wvhfr_400.webp";
 
             }
             else if (number == 2) {
+                
                 rollImg.src = "https://images.meesho.com/images/products/112869796/qjykj_400.webp";
             }
             else if (number == 3) {
+                
                 rollImg.src = "https://images.meesho.com/images/products/174295063/jff10_512.webp";
             }
             else if (number == 4) {
+                
                 rollImg.src = "https://images.meesho.com/images/products/162170012/trtzs_400.webp";
             }
             else if (number == 5) {
+                
                 rollImg.src = "https://images.meesho.com/images/products/33495619/m4ev1_400.webp";
             }
+
+            else if (number == 6) {
+                
+                rollImg.src ="https://images.meesho.com/images/products/175303214/av5gw_400.webp";
+            }
+            else if (number == 7) {
+                
+                rollImg.src = "https://images.meesho.com/images/products/69514462/3rur6_400.webp";
+            }
+            else if (number == 8) {
+                
+                rollImg.src = "https://images.meesho.com/images/products/184103735/azbng_400.webp";
+            }
+            else if (number == 9) {
+                
+                rollImg.src = "https://images.meesho.com/images/products/116840453/bdypx_400.webp";
+            }
+            else if (number == 10) {
+                
+                rollImg.src = "https://images.meesho.com/images/products/74411268/meysu_400.webp";
+            }
+            else if (number == 11) {
+                
+                rollImg.src = "https://images.meesho.com/images/products/161852181/szisg_400.webp";
+            }
+            else if (number == 12) {
+                
+                rollImg.src = "https://images.meesho.com/images/products/71802374/yxrzn_400.webp";
+            }
         }
-
-
 
 
 
