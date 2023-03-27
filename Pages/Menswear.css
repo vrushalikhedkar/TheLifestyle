@@ -177,7 +177,7 @@ body{
     box-shadow: 4px 4px 4px 4px #4e4376;
 }
 
-.ImageURl{
+input[type]{
     height: 30px;
     width: 80%;
     background-color: aliceblue;
