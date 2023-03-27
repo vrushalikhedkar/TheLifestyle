@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <link rel="StyleSheet" href="formalwear.css">
+    <body class="body" id="DarkMode">
+        <div class="TitleDiv">
+            <h1 class="Title">
+                The Formal Wear
+            </h1>
+            <div>
+                 <!--<select class="party-dresses">
+                     <option class="party" >Party formals</option>
+                    <option>Women's formal Wear</option>
+                    <option>Men's formal Wear</option>
+                    <option> Kids formal Wear</option>
+                    <option> Wedding formal Wear</option>
+                </select>-->
+            </div>
+        </div>
+        <button class="Lightbtn" onclick="Light()">
+            Light
+        </button>
+        <button class="Darkbtn" onclick="Dark()">
+            Dark
+        </button>
+        
+        <div>
+           <div class="Copyfloater">
+            <input type="text" id="image-url">
+            <button class="CopyBtn" , onclick="copyToClipboard()">
+                Copy URL
+            </button>
+           </div>
+            <div class="Floater">
+                <div>
+                    <button class="Generateimagebtn" , onclick="generateImage()">
+                        Generate Image...
+                    </button>
+                </div>
+                <div class="formalImages">
+                    <img src="../Images/main/Formal Wear2.jpeg" alt="Generated Random Image" class="formalRandomImage" id="formalRandomImage">
+                </div>
+            </div>
+        </div>
+
+        <div class="Homediv">
+            <a href="../index.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/8862/8862711.png" alt="Home" class="HomeBtn">
+            </a>
+            <div class="condiv">
+                <a href="https://wa.me/+918530455768">
+                    <img src="../Images/formal/contact.png" alt="Home" class="conBtn">
+                </a>
+        </div>
+        <script>
+            function Light(){
+                const Element = document.getElementById("DarkMode");
+                Element.className = "body";
+            }
+
+            function Dark(){
+                const Element = document.getElementById("DarkMode");
+                Element.className = "body2";
+            }
+
+           
+            
+            var images = [ "https://tse4.mm.bing.net/th?id=OIP.mZUtADkCcs3R2CeJ6L09FwHaJ4&pid=Api&P=0",
+            'https://tse4.mm.bing.net/th?id=OIP.kbFwSjhuHUOYybyRPCSTPAHaJ4&pid=Api&P=0',
+            'https://tse2.mm.bing.net/th?id=OIP.UGUJecnDGKg6PpLxaVFJXAHaJ4&pid=Api&P=0',
+            "https://dresseskhazana.com/wp-content/uploads/2017/06/indian-wedding-dress-for-bride-2017.jpg",
+            "https://www.arabiaweddings.com/sites/default/files/albums/2019/10/27/indian_wedding_dresses_4.jpg",
+            "https://www.stylesgap.com/wp-content/uploads/2015/06/Latest-Men-Party-Wear-Formal-Dresses-Collection-2015-2016-2.jpg",
+            "https://www.stylesgap.com/wp-content/uploads/2015/06/Latest-Men-Party-Wear-Formal-Dresses-Collection-2015-2016-2.jpg",
+            "https://mensopedia.com/wp-content/uploads/2019/07/men-black-tie-formal.jpg",
+            "https://4.bp.blogspot.com/-duAbCEIiYwE/VVRz_TC0LMI/AAAAAAAAAY0/uc68pow3CYQ/s1600/Men%2BFashion%2BFormal%2BWear%2BDresses%2BCollection%2B2015%2B(3).jpg",
+            "https://tse3.mm.bing.net/th?id=OIP.HS0Hzgo6jMYRMc0H7RmNhAHaKz&pid=Api&P=0"
+             ];
+            
+            function generateImage() {
+              var randomIndex = Math.floor(Math.random() * images.length);
+              var imageUrl = " " + images[randomIndex];
+              var imageElement = document.getElementById("formalRandomImage");
+              imageElement.src = imageUrl;
+              document.getElementById("image-url").value = imageUrl
+            }
+            
+            function copyToClipboard() {
+              var copyText = document.getElementById("image-url");
+              copyText.select();
+              copyText.setSelectionRange(0, 99999);
+              document.execCommand("copy");
+              alert("Copied to clipboard: " + copyText.value);
+            }
+            
+        </script>
+        
+    </body>
+</html>

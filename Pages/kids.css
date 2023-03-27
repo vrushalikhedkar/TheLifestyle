@@ -1,7 +1,13 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
 body {
     background-color: #E5E0FF;
 }
-.body2{
+
+.body2 {
     background-color: #091615;
 
 }
@@ -9,18 +15,32 @@ body {
 .novbar {
     background-color: #e4b7de;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 20px;
     font-family: cursive;
     height: 50px;
     margin-top: -10px;
     margin-bottom: 10px;
-    padding-top: 2px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+}
+.home-btn-container{
+    height: 100px;
+    width: 100%;
+
+
 }
 
-.mode-btn{
-    margin-top: -60px;
+.HomeBtn {
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
+
 
 .Lightbtn {
     height: 35px;
@@ -74,31 +94,11 @@ body {
     margin-left: 30px;
 }
 
-.select-bar {
-    display: block;
-    margin: auto;
-    margin-left: 460px;
-    width: 550px;
-    height: 50px;
-    padding: 10px;
-    padding-left: 10px;
-    font-size: 20px;
-    margin-top: 40px;
-    border-radius: 50px / 10px;
-    border: none;
-    cursor: pointer;
-    background-color: #37306B;
-    color: white;
-    box-shadow: 0px 0px 6px 3px #666699;
-    align-items: center;
-    text-align: center;
-    font-family: cursive;
-
-}
-
 .optimization {
-    margin-left: 540px;
-    margin-top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
     height: 410px;
     width: 360px;
     cursor: pointer;
@@ -113,7 +113,8 @@ body {
     color: white;
     padding: 15px 20px;
     font-size: 20px;
-    margin-left: 620px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 30px;
     cursor: pointer;
     font-family: cursive;
@@ -122,17 +123,54 @@ body {
 }
 
 .genrate-img:hover {
-    background-color: #6634f6;
     width: 20px 25px;
     font-size: 25px;
-    box-shadow: 0 0 5px 3px #9933ff
-    ;
-
-}
-
-.heading {
-    text-align: center;
-    font-size: 30px;
-    margin-left: -70px;
+    background-color: #66347F;
+    color: azure;
+    border-radius: 15px;
     font-family: cursive;
+    box-shadow: 2px 2px 2px 2px #263159;
+
 }
+
+.myInput {
+    height: 30px;
+    width: 80%;
+    margin-left: 80px;
+    margin-top: 30px;
+    background-color: aliceblue;
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px #245953;
+}
+
+.CopyBtn {
+    display: block;
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    background-color: #37306B;
+    color: azure;
+    margin-left: 1455px;
+    margin-top: -40px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    font-family: cursive;
+    box-shadow: 2px 2px 2px 2px #263159;
+    cursor: pointer;
+}
+
+.CopyBtn:hover {
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    background-color: #66347F;
+    color: azure;
+    border-radius: 20px;
+    font-family: cursive;
+    box-shadow: 2px 2px 2px 2px #263159;
+}
+
