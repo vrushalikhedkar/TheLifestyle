@@ -15,6 +15,8 @@ body {
 .novbar {
     background-color: #e4b7de;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 20px;
     font-family: cursive;
     height: 50px;
@@ -24,8 +26,12 @@ body {
     padding-bottom: 2px;
 }
 
-.mode-btn {
-    margin-top: -40px;
+.HomeBtn {
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
 }
 
 .Lightbtn {
@@ -80,28 +86,11 @@ body {
     margin-left: 30px;
 }
 
-.select-bar {
-    display: block;
-    margin: auto;
-    margin-left: 460px;
-    width: 550px;
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 50px / 10px;
-    border: none;
-    background-color: #37306B;
-    color: white;
-    box-shadow: 0px 0px 6px 3px #666699;
-    text-align: center;
-    font-family: cursive;
-
-}
-
 .optimization {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 60px;
+    margin-top: 10px;
     height: 410px;
     width: 360px;
     cursor: pointer;
@@ -116,7 +105,8 @@ body {
     color: white;
     padding: 15px 20px;
     font-size: 20px;
-    margin-left: 620px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 30px;
     cursor: pointer;
     font-family: cursive;
@@ -134,7 +124,8 @@ body {
     box-shadow: 2px 2px 2px 2px #263159;
 
 }
-.myInput{
+
+.myInput {
     height: 30px;
     width: 80%;
     margin-left: 80px;
@@ -147,20 +138,24 @@ body {
     text-align: center;
     box-shadow: 2px 2px 2px 2px #245953;
 }
-.CopyBtn{
+
+.CopyBtn {
+    display: block;
     height: 40px;
     width: 120px;
     font-size: 20px;
     background-color: #37306B;
     color: azure;
-    margin-left: 10px;
+    margin-left: 1320px;
+    margin-top: -40px;
+    margin-bottom: 30px;
     border-radius: 15px;
     font-family: cursive;
     box-shadow: 2px 2px 2px 2px #263159;
     cursor: pointer;
 }
 
-.CopyBtn:hover{
+.CopyBtn:hover {
     height: 40px;
     width: 120px;
     font-size: 20px;
