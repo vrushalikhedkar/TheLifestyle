@@ -145,7 +145,7 @@ body {
 
 }
 
-.ImageURl {
+input[type] {
     height: 30px;
     width: 65%;
     background-color: aliceblue;
