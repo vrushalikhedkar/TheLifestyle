@@ -156,6 +156,8 @@ body{
     border-radius: 15px;
     font-family: cursive;
     box-shadow: 2px 2px 2px 2px #263159;
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .GeneratedImages{
@@ -216,6 +218,8 @@ body{
     border-radius: 15px;
     font-family: cursive;
     box-shadow: 2px 2px 2px 2px #263159;
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .Homediv{
