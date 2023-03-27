@@ -10,6 +10,7 @@ body {
     height: 70px;
     width: 100%;
     background-color: #e4b7de;
+    font-family: 'Bree Serif', serif;
 }
 
 .Titleparty{
@@ -54,6 +55,7 @@ body {
     position: relative;
     margin-top: 25px;
     margin-left: 160px;
+    border-radius: 6px;
 }
 
 .randomize-party-btn {
@@ -111,3 +113,5 @@ body {
     font-family: 'Bree Serif', serif;
     text-align: center;
 }
+
+
