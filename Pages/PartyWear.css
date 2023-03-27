@@ -1,41 +1,113 @@
-body{
-   background-color:;
+body {
+    background-color: #f1e2f1;
 }
 
-.text-container {
-    background-color: #601f40;
-    width: 447px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 17px;
+.bodydark{
+    background-color: #091615;
+}
+
+.TitleDivparty{
+    height: 70px;
+    width: 100%;
+    background-color: #e4b7de;
+}
+
+.Titleparty{
+    color: rgb(32, 47, 47);
+    display: block;
     text-align: center;
-    position: relative;
+    padding: 15px;
+    font-family: 'Bree Serif', serif;
+    font-weight: bolder;
+}
+
+/* .text-container {
+    background-color: #601f40;
+    text-align: center;
     font-size: 50px;
     padding: 15px;
     color: aliceblue;
-    border-radius: 6px;
-}
+    margin: 0px;
+    width: 100%;
+} */
 
-.party-dresses{
+.party-dresses {
     background-color: floralwhite;
     padding: 12px;
-     margin-left: 250px; 
+    margin-left: 250px;
     border-radius: 5px;
     margin-top: 20px;
     font-size: 22px;
+    font-family: 'Bree Serif', serif;
 }
 
-.container{
+.container {
     /* background-color: royalblue; */
     margin-left: auto;
     margin-right: auto;
     width: 747px;
 }
 
-.imgdress{
+.imgdress {
     height: 538px;
-    width: 420px;
+    width: 400px;
     position: relative;
     margin-top: 25px;
     margin-left: 160px;
+}
+
+.randomize-party-btn {
+    font-size: 40px;
+    margin-top: 32px;
+    margin-left: 183px; 
+    padding-left: 22px;
+    padding-right: 22px;
+    background-color: #79236e;
+    border-radius: 6px;
+    color: aliceblue;
+    font-family: 'Bree Serif', serif;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+
+.container2 {
+    
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+
+}
+
+.party-copy-url {
+
+    word-wrap: break-word;
+    color: #333;
+    text-align: center;
+    width: 90%;
+    position: relative;
+    background-color: aliceblue;
+    width: 922px;
+    font-size: 30px;
+    padding: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-family: 'Bree Serif', serif;
+
+}
+
+.party-copy-btn{
+     background-color: #f6c553;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+    color: #000;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
 }
