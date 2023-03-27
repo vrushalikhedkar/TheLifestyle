@@ -71,19 +71,19 @@
                 Element.className = "body2";
             }
 
-            function copyToclipboard() {
-                const el = document.createElement("textarea");
-                el.value = event.target.innerHTML;
-                document.body.appendChild(el);
-                el.select();
-                document.execCommand("copy");
-                document.body.removeChild(el);
-            }
-
-            // function copyToclipboard(){
-            //     const CopyText = document.getElementById("URL");
-            //     alert("Copied To Clipboard: " + CopyText.value);
+            // function copyToclipboard() {
+            //     const el = document.createElement("textarea");
+            //     el.value = event.target.innerHTML;
+            //     document.body.appendChild(el);
+            //     el.select();
+            //     document.execCommand("copy");
+            //     document.body.removeChild(el);
             // }
+
+            function copyToclipboard(){
+                const CopyText = document.getElementById("URL");
+                alert("Copied To Clipboard: " + CopyText.value);
+            }
                
             // function copyToclipboard(){
             //     var CopyText = document.getElementById("URL");
