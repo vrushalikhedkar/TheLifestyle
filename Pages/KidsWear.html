@@ -3,7 +3,7 @@
 
 <head>
     <title>Kids Wear</title>
-   <link rel="stylesheet" type="text/css" href="./kids.css"/>
+    <link rel="stylesheet" type="text/css" href="./kids.css" />
 
 </head>
 
@@ -12,37 +12,34 @@
     <div class="container">
         <div class="novbar">
             <h2 class="heading">The Kid's Wear</h2>
-        </div>
-
-       <div>
-        <select class="select-bar">
-            <option>Baby Boy</option>
-            <option>Baby Girl</option>
-            <option>Born Baby</option>
-        </select>
+            <div>
+                <a href="../index.html" />
+                <img src="https://cdn-icons-png.flaticon.com/128/5973/5973800.png" class="HomeBtn" />
+            </div>
         </div>
 
 
-       <div class="mode-btn">
-        <button class="Lightbtn" onclick="Light()">
-            Light
-        </button>
-        <button class="Darkbtn" onclick="Dark()">
-            Dark
-        </button>
+        <div class="mode-btn">
+            <button class="Lightbtn" onclick="Light()">
+                Light
+            </button>
+            <button class="Darkbtn" onclick="Dark()">
+                Dark
+            </button>
         </div>
 
 
         <img src="../Images/KIds-wear-images/img-1.jpg" class="optimization" id="optimization" />
         <button class="genrate-img" onclick="generate()">Generate Image</button>
-    <div>
-        
-        
 
-        <input type="text" value="https://i.pinimg.com/236x/17/45/c1/1745c1a0550c768fdd98fce0a8aa9ddd.jpg" id="myInput">
-        <button onclick="copyUrl()">Copy url</button>
-    </div>
-    
+
+        <div>
+            <div type="text" value="https://i.pinimg.com/236x/17/45/c1/1745c1a0550c768fdd98fce0a8aa9ddd.jpg"
+                id="myInput" class="myInput">Copy this URL</div>
+
+            <button class="CopyBtn" onclick="copyUrl()">Copy url</button>
+        </div>
+
     </div>
 
     <script type="text/javascript">
@@ -66,7 +63,7 @@
             const kidswearImg = document.getElementById("optimization");
 
             if (number == 1) {
-                link.innerHTML= "https://i.pinimg.com/236x/17/45/c1/1745c1a0550c768fdd98fce0a8aa9ddd.jpg"
+                link.innerHTML = "https://i.pinimg.com/236x/17/45/c1/1745c1a0550c768fdd98fce0a8aa9ddd.jpg"
                 kidswearImg.src = "../Images/KIds-wear-images/img-1.jpg";
 
             }
@@ -116,7 +113,7 @@
 
             }
             else if (number == 11) {
-                link.innerHTML= "//https://i.pinimg.com/236x/60/a2/b1/60a2b1c9f0d741baf833e44e71f7b372.jpg"
+                link.innerHTML = "//https://i.pinimg.com/236x/60/a2/b1/60a2b1c9f0d741baf833e44e71f7b372.jpg"
                 kidswearImg.src = "../Images/KIds-wear-images/img-11.jpg";
 
             }
