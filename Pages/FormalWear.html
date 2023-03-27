@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <link rel="StyleSheet" href="formalwear.css">
+    <body class="body" id="DarkMode">
+        <div class="TitleDiv">
+            <h1 class="Title">
+                The Formal Wear
+            </h1>
+            <div>
+                <select class="party-dresses">
+                    <option class="party" onclick="party()">Party formals</option>
+                    <option>Women's formal Wear</option>
+                    <option>Men's formal Wear</option>
+                    <option> Kids formal Wear</option>
+                    <option> Wedding formal Wear</option>
+                </select>
+            </div>
+        </div>
+        <button class="Lightbtn" onclick="Light()">
+            Light
+        </button>
+        <button class="Darkbtn" onclick="Dark()">
+            Dark
+        </button>
+        
+        <div>
+           <div class="Copyfloater">
+            <input type="text" class="ImageURl" id="URL">
+            <button class="CopyBtn" onclick="copyToclipboard()">
+                Copy URL
+            </button>
+           </div>
+            <div class="Floater">
+                <div>
+                    <button class="Generateimagebtn" onclick="generate()">
+                        Generate Image...
+                    </button>
+                </div>
+                <div class="formalImages">
+                    <img src="../Images/main/Formal Wear2.jpeg" alt="Generated Random Image" class="formalRandomImage" id="formalRandomImage">
+                </div>
+            </div>
+        </div>
+
+        <div class="Homediv">
+            <a href="../index.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/8862/8862711.png" alt="Home" class="HomeBtn">
+            </a>
+        </div>
+        <script>
+            function Light(){
+                const Element = document.getElementById("DarkMode");
+                Element.className = "body";
+            }
+
+            function Dark(){
+                const Element = document.getElementById("DarkMode");
+                Element.className = "body2";
+            }
+
+           
+            function generate(){
+                
+            const min = 1;
+            const max = 11;
+            const number = Math.floor(Math.random() * (max - min + 1)) + min;
+        
+            const link = document.getElementById("URL")
+            const formalwear = document.getElementById("formalRandomImage")
+            
+            if(number==1)
+            {
+                link.innerHTML= "https://tse4.mm.bing.net/th?id=OIP.mZUtADkCcs3R2CeJ6L09FwHaJ4&pid=Api&P=0"
+                formalwear.src = "../Images/formal/1.jpg";
+            }
+            else if(number==2)
+            {
+                link.innerHTML= "https://tse4.mm.bing.net/th?id=OIP.kbFwSjhuHUOYybyRPCSTPAHaJ4&pid=Api&P=0"
+                formalwear.src = "../Images/formal/2.jpg";
+            }
+            else if(number==3)
+            {
+                link.innerHTML = "https://tse2.mm.bing.net/th?id=OIP.UGUJecnDGKg6PpLxaVFJXAHaJ4&pid=Api&P=0"
+                formalwear.src = "../Images/formal/3.jpg";
+            }
+            else if(number==4)
+            {
+                link.innerHTML = "https://dresseskhazana.com/wp-content/uploads/2017/06/indian-wedding-dress-for-bride-2017.jpg"
+                formalwear.src = "../Images/formal/4.jpg";
+            }
+            else if(number==5)
+            {
+                link.innerHTML = "https://www.arabiaweddings.com/sites/default/files/albums/2019/10/27/indian_wedding_dresses_4.jpg"
+                formalwear.src = "../Images/formal/5.jpg";
+            }
+            else if(number==6)
+            {
+                link.innerHTML = "https://www.stylesgap.com/wp-content/uploads/2015/06/Latest-Men-Party-Wear-Formal-Dresses-Collection-2015-2016-2.jpg"
+                formalwear.src = "../Images/formal/6.jpg";
+            }
+            else if(number==7)
+            {
+                link.innerHTML = "https://cdn18.nnnow.com/web-images/large/styles/HEDCMFHHUGB/1678176618770/3.jpg"
+                formalwear.src = "../Images/formal/7.jpg";
+            }
+            else if(number==8)
+            {
+                link.innerHTML = "https://mensopedia.com/wp-content/uploads/2019/07/men-black-tie-formal.jpg"
+                formalwear.src = "../Images/formal/8.jpg";
+            }
+            else if(number==9)
+            {
+                link.innerHTML = "https://4.bp.blogspot.com/-duAbCEIiYwE/VVRz_TC0LMI/AAAAAAAAAY0/uc68pow3CYQ/s1600/Men%2BFashion%2BFormal%2BWear%2BDresses%2BCollection%2B2015%2B(3).jpg"
+                formalwear.src = "../Images/formal/9.jpg";
+            }
+            else if(number==10)
+            {
+                link.innerHTML = ".https://tse3.mm.bing.net/th?id=OIP.HS0Hzgo6jMYRMc0H7RmNhAHaKz&pid=Api&P=0"
+                formalwear.src = "../Images/formal/10.jpg";
+            }
+            
+            
+            else
+            {
+                link.innerHTML = "https://tse4.mm.bing.net/th?id=OIP.mZUtADkCcs3R2CeJ6L09FwHaJ4&pid=Api&P=0"
+                formalwear.src = "../Images/formal/1.jpg";
+            }
+            }
+            
+        </script>
+        
+    </body>
+</html>
