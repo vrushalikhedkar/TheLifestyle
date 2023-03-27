@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
 body {
     background-color: #E5E0FF;
 }
@@ -14,12 +21,12 @@ body {
     height: 50px;
     margin-top: -10px;
     margin-bottom: 10px;
-    padding-top: 2px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 2px;
 }
 
 .mode-btn{
-    margin-top: -60px;
+    margin-top: -40px;
 }
 
 .Lightbtn {
@@ -79,25 +86,22 @@ body {
     margin: auto;
     margin-left: 460px;
     width: 550px;
-    height: 50px;
     padding: 10px;
-    padding-left: 10px;
     font-size: 20px;
-    margin-top: 40px;
     border-radius: 50px / 10px;
     border: none;
-    cursor: pointer;
     background-color: #37306B;
     color: white;
     box-shadow: 0px 0px 6px 3px #666699;
-    align-items: center;
     text-align: center;
     font-family: cursive;
 
 }
 
 .optimization {
-    margin-left: 540px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 60px;
     height: 410px;
     width: 360px;
@@ -120,6 +124,8 @@ body {
     box-shadow: 0px 0px 6px 3px #666699;
 
 }
+
+
 
 .genrate-img:hover {
     background-color: #6634f6;
