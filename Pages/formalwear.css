@@ -232,3 +232,12 @@ body{
     margin-right: auto;
     transform: scale(1.1);
 }
+.party-dresses{
+    background-color: #37306B;
+    color: azure;
+    padding: 12px;
+     margin-left: 250px; 
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 22px;
+}
