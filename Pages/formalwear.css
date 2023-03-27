@@ -1,0 +1,243 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #E5E0FF;
+}
+
+.body2{
+    background-color: #091615;
+}
+
+.TitleDiv{
+    height: 70px;
+    width: 100%;
+    background-color: #e4b7de ;
+}
+
+.Title{
+    color: rgb(32, 47, 47);
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+.SubTitle{
+    font-size: 25px;
+    color: rgb(32, 47, 47);
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-family: cursive;
+    font-weight: bolder;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.Lightbtn{
+    height: 35px;
+    width: 75px;
+    font-size: 17px;
+    border-radius: 15%;
+    padding: 2px;
+    margin-top: 10px;
+    font-family: cursive;
+    background-color: #37306B;
+    color: aliceblue;
+    margin-left: 85%;
+}
+
+.Lightbtn:hover{
+    height: 35px;
+    width: 75px;
+    font-size: 17px;
+    border-radius: 15%;
+    padding: 2px;
+    margin-top: 10px;
+    font-family: cursive;
+    background-color: #66347F;
+    transform: scale(1.1);
+    color: aliceblue;
+    margin-left: 85%;
+}
+
+.Darkbtn{
+    height: 35px;
+    width: 75px;
+    font-size: 17px;
+    border-radius: 15%;
+    padding: 2px;
+    margin-top: 10px;
+    font-family: cursive;
+    background-color: #37306B;
+    color: aliceblue;
+    margin-left: 30px;
+}
+
+.Darkbtn:hover{
+    height: 35px;
+    width: 75px;
+    font-size: 17px;
+    border-radius: 15%;
+    padding: 2px;
+    margin-top: 10px;
+    font-family: cursive;
+    background-color: #66347F;
+    transform: scale(1.1);
+    color: aliceblue;
+    margin-left: 30px;
+}
+
+
+.Slogan1{
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 30%;
+    color: #263159;
+}
+
+.Slogan2{
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 35%;
+    color: #263159;
+}
+
+.Slogan3{
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 55%;
+    color: #263159;
+}
+
+.Platform{
+    height: 600px;
+    width: 100%;
+    background-color: #80d0c7;
+    margin-top: 100px;
+}
+
+.Floater{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+.Generateimagebtn{
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    margin-top: 250px;
+    border-radius: 15px;
+    background-color: #37306B;
+    color: azure;
+    margin-bottom: 50px;
+    float: left;
+    font-family: cursive;
+    box-shadow: 2px 2px 2px 2px #263159;
+}
+
+.Generateimagebtn:hover{
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    margin-top: 250px;
+    background-color: #66347F;
+    color: azure;
+    margin-bottom: 50px;
+    float: left;
+    border-radius: 15px;
+    font-family: cursive;
+    box-shadow: 2px 2px 2px 2px #263159;
+}
+
+.formalImages{
+    height: 600px;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    float: right;
+    
+}
+
+.formalRandomImage{
+    height: 550px;
+    width: 400px;
+    margin-right: 150px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 4px 4px #4e4376;
+}
+
+.ImageURl{
+    height: 30px;
+    width: 80%;
+    background-color: aliceblue;
+    color: black;
+    float: left;
+    padding: 5px;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px #245953;
+}
+
+.Copyfloater{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+.CopyBtn{
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    background-color: #37306B;
+    color: azure;
+    float: right;
+    border-radius: 15px;
+    font-family: cursive;
+    box-shadow: 2px 2px 2px 2px #263159;
+}
+
+.CopyBtn:hover{
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    background-color: #66347F;
+    color: azure;
+    float: right;
+    border-radius: 15px;
+    font-family: cursive;
+    box-shadow: 2px 2px 2px 2px #263159;
+}
+
+.Homediv{
+    height: 100px;
+    width: 100%;
+}
+
+.HomeBtn{
+    display: block;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(1.1);
+}
+.party-dresses{
+    background-color: #37306B;
+    color: azure;
+    padding: 12px;
+     margin-left: 250px; 
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 22px;
+}
