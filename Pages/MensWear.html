@@ -35,8 +35,10 @@
         
         <div>
            <div class="Copyfloater">
-            <input type="text" class="ImageURl" id="URL">
-            <button class="CopyBtn" onclick="copyToclipboard()">
+            <span type="text" class="ImageURl" id="URL">
+                Copy This URL
+            </span>
+            <button class="CopyBtn" onclick="copyToclipboard()" id="URL">
                 Copy URL
             </button>
            </div>
@@ -69,10 +71,18 @@
                 Element.className = "body2";
             }
 
-            // function copytoclip(){
-            //     const CopyText = document.getElementById('.URL');
-            //     // CopyText.select()
-            //     alert("Copied To Clipboard");
+            function copyToclipboard() {
+                const el = document.createElement("textarea");
+                el.value = event.target.innerHTML;
+                document.body.appendChild(el);
+                el.select();
+                document.execCommand("copy");
+                document.body.removeChild(el);
+            }
+
+            // function copyToclipboard(){
+            //     const CopyText = document.getElementById("URL");
+            //     alert("Copied To Clipboard: " + CopyText.value);
             // }
                
             // function copyToclipboard(){
