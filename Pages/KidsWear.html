@@ -26,12 +26,11 @@
         <button class="genrate-img" onclick="generate()">Generate Image</button>
 
         <input type="text" value="https://i.pinimg.com/236x/17/45/c1/1745c1a0550c768fdd98fce0a8aa9ddd.jpg" id="myInput">
-        <button onclick="copyUrl()">Copy Text</button>
 
     </div>
 
+    <button  class="CopyBtn" onclick="copyUrl()">Copy url</button>
 
-    <button class="CopyBtn" onclick="copyUrl()">Copy url</button>
     </div>
 
     <div class="home-btn-container">
@@ -42,96 +41,53 @@
 
     </div>
 
-    <script type="text/javascript">
+    <script>
         function Light() {
-            const Element = document.getElementById("DarkMode");
-            Element.className = "body";
+            const element = document.getElementById("dark-mode");
+            element.className = "body";
         }
 
         function Dark() {
-            const Element = document.getElementById("DarkMode");
-            Element.className = "body2";
+            const element = document.getElementById("dark-mode");
+            element.className = "container-body";
         }
 
-        function generate() {
-            const min = 1;
-            const max = 12;
-            const number = Math.floor(Math.random() * (max - min + 1)) + min;
+        
+        var images = [  "https://i.pinimg.com/236x/17/45/c1/1745c1a0550c768fdd98fce0a8aa9ddd.jpg",
+        "https://i.pinimg.com/564x/bb/15/7e/bb157e3c431610f3ececbc9aec307e31.jpg",
+        "https://i.pinimg.com/236x/c2/5e/f5/c25ef57020e6e997fff6729b0cb078e5.jpg",
+        "https://i.pinimg.com/474x/34/8f/85/348f85435774cc58513d600875dd105b.jpg",
+        "https://i.pinimg.com/236x/17/ce/23/17ce233cc5adf910111d908bc5dc752a.jpg",
+        "https://i.pinimg.com/236x/ae/c1/57/aec157ee810e823dfd5458fbee7d7d47.jpg",
+        "https://i.pinimg.com/236x/81/85/a9/8185a9b2e1094137e1dbb1c269d2a55e.jpg",
+        "https://i.pinimg.com/236x/37/6c/07/376c07cfe0e25175ea60d47655c0ef0b.jpg",
+        "https://i.pinimg.com/236x/f0/d5/86/f0d586b46bea99a3e02904550b06892c.jpg",
+        "https://i.pinimg.com/474x/d1/57/ea/d157ea38b0f67d9703912396fef50953.jpg",
+        "//https://i.pinimg.com/236x/60/a2/b1/60a2b1c9f0d741baf833e44e71f7b372.jpg",
+        "https://i.pinimg.com/236x/e7/fb/3d/e7fb3dea1f60bd8720a328159f92a134.jpg"
 
-
-            const link = document.getElementById("myInput")
-            const kidswearImg = document.getElementById("optimization");
-
-            if (number == 1) {
-                link.innerHTML = "https://i.pinimg.com/236x/17/45/c1/1745c1a0550c768fdd98fce0a8aa9ddd.jpg"
-                kidswearImg.src = "../Images/KIds-wear-images/img-1.jpg";
-
+    ] ;            
+            
+    function generate() {
+              var randomIndex = Math.floor(Math.random() * images.length);
+              var imageUrl = " " + images[randomIndex];
+              var imageElement = document.getElementById("optimization");
+              imageElement.src = imageUrl;
+              document.getElementById("myInput").value = imageUrl
             }
-            else if (number == 2) {
-                link.innerHTML = "https://i.pinimg.com/564x/bb/15/7e/bb157e3c431610f3ececbc9aec307e31.jpg"
-                kidswearImg.src = "../Images/KIds-wear-images/img-2.jpg";
-
-            }
-            else if (number == 3) {
-                link.innerHTML = "https://i.pinimg.com/236x/c2/5e/f5/c25ef57020e6e997fff6729b0cb078e5.jpg"
-                kidswearImg.src = "../Images/KIds-wear-images/img-3.jpg";
-
-            }
-            else if (number == 4) {
-                link.innerHTML = "https://i.pinimg.com/474x/34/8f/85/348f85435774cc58513d600875dd105b.jpg"
-                kidswearImg.src = "../Images/KIds-wear-images/img-4.jpg";
-
-            }
-            else if (number == 5) {
-                link.innerHTML = "https://i.pinimg.com/236x/17/ce/23/17ce233cc5adf910111d908bc5dc752a.jpg"
-                kidswearImg.src = "../Images/KIds-wear-images/img-5.jpg";
-
-            }
-            else if (number == 6) {
-                link.innerHTML = "https://i.pinimg.com/236x/ae/c1/57/aec157ee810e823dfd5458fbee7d7d47.jpg"
-                kidswearImg.src = "../Images/KIds-wear-images/img-6.jpg";
-
-            }
-            else if (number == 7) {
-                link.innerHTML = "https://i.pinimg.com/236x/81/85/a9/8185a9b2e1094137e1dbb1c269d2a55e.jpg"
-                kidswearImg.src = "../Images/KIds-wear-images/img-7.jpg";
-
-            }
-            else if (number == 8) {
-                link.innerHTML = "https://i.pinimg.com/236x/37/6c/07/376c07cfe0e25175ea60d47655c0ef0b.jpg"
-                kidswearImg.src = "../Images/KIds-wear-images/img-8.jpg";
-
-            }
-            else if (number == 9) {
-                link.innerHTML = "https://i.pinimg.com/236x/f0/d5/86/f0d586b46bea99a3e02904550b06892c.jpg"
-                kidswearImg.src = "../Images/KIds-wear-images/img-9.jpg";
-
-            }
-            else if (number == 10) {
-                link.innerHTML = "https://i.pinimg.com/474x/d1/57/ea/d157ea38b0f67d9703912396fef50953.jpg"
-                kidswearImg.src = "../Images/KIds-wear-images/img-10.jpg";
-
-            }
-            else if (number == 11) {
-                link.innerHTML = "//https://i.pinimg.com/236x/60/a2/b1/60a2b1c9f0d741baf833e44e71f7b372.jpg"
-                kidswearImg.src = "../Images/KIds-wear-images/img-11.jpg";
-
-            }
-            else {
-                link.innerHTML = "https://i.pinimg.com/236x/e7/fb/3d/e7fb3dea1f60bd8720a328159f92a134.jpg"
-                kidswearImg.src = "../Images/KIds-wear-images/img-12.jpg";
-
-            }
+            
             function copyUrl() {
-                const copyText = document.getElementById("myInput");
-
-                copyText.select();
-                alert("copy the text: " + copyText.value);
+              var copyText = document.getElementById("myInput");
+              copyText.select();
+              copyText.setSelectionRange(0, 99999);
+              document.execCommand("copy");
+              alert("Copied to clipboard: " + copyText.value);
             }
 
-
-        }
-    </script>
+    </script>
+   
+                
+      
 </body>
 
 </html>
